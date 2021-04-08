@@ -17,15 +17,15 @@ platform :android do
   lane :upload_test do
     # Uploads app to BrowserStack app automate.
     upload_to_browserstack_app_automate(
-      browserstack_username: ENV["BROWSERSTACK_USERNAME"],
-      browserstack_access_key: ENV["BROWSERSTACK_ACCESS_KEY"],
+      browserstack_username: "amitbahir1",
+      browserstack_access_key: "U7wH2Eq2s1mVJ64x3bzm",
       file_path: "browserstack_android_sample/build/outputs/apk/debug/browserstack_android_sample-debug.apk"
     )
 
     # Uploads app to BrowserStack app live.
     upload_to_browserstack_app_live(
-      browserstack_username: ENV["BROWSERSTACK_USERNAME"],
-      browserstack_access_key: ENV["BROWSERSTACK_ACCESS_KEY"],
+      browserstack_username: "amitbahir1",
+      browserstack_access_key: "U7wH2Eq2s1mVJ64x3bzm",
       file_path: "browserstack_android_sample/build/outputs/apk/debug/browserstack_android_sample-debug.apk"
     )
     gradle(task: "test")
