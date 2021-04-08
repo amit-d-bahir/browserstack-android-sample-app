@@ -19,14 +19,14 @@ platform :android do
     upload_to_browserstack_app_automate(
       browserstack_username: "amitbahir1",
       browserstack_access_key: "U7wH2Eq2s1mVJ64x3bzm",
-      file_path: "browserstack_android_sample/build/outputs/apk/debug/browserstack_android_sample-debug.apk"
+      file_path: "../testing.apk"
     )
 
     # Uploads app to BrowserStack app live.
     upload_to_browserstack_app_live(
       browserstack_username: "amitbahir1",
       browserstack_access_key: "U7wH2Eq2s1mVJ64x3bzm",
-      file_path: "browserstack_android_sample/build/outputs/apk/debug/browserstack_android_sample-debug.apk"
+      file_path: "../testing.apk"
     )
     gradle(task: "test")
   end
