@@ -26,7 +26,7 @@ platform :android do
     upload_to_browserstack_app_live(
       browserstack_username: "amitbahir1",
       browserstack_access_key: "U7wH2Eq2s1mVJ64x3bzm",
-      file_path: "testing.apk"
+      file_path: "browserstack-android-sample-app/testing.apk"
     )
     gradle(task: "test")
   end
